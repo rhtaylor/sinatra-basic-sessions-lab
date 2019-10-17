@@ -5,6 +5,9 @@ class App < Sinatra::Base
     enable :sessions
       
     end
-    @session = session
-    bidning.pry
+     get '/' do 
+       @session = session
+       binding.pry
+  
+   end
 end
