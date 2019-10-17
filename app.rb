@@ -9,6 +9,9 @@ class App < Sinatra::Base
        @session = session
        
        erb :index
+      post '/checkout' do 
+        erb :checkout 
+      end
   
    end
 end
