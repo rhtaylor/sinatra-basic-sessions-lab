@@ -5,5 +5,6 @@ class App < Sinatra::Base
     enable :sessions
       set :session_secret
     end
-    
+    @session = session
+    bidning.pry
 end
